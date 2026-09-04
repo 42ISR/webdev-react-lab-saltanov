@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  color: #1f2430;
+  background: #f7f8fa;
+  line-height: 1.5;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.section-title {
+  font-size: 28px;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+/* ---------- BUTTONS ---------- */
+.btn {
+  display: inline-block;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 22px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+.btn:hover { opacity: 0.85; }
+
+.btn--primary {
+  background: #4b5efc;
+  color: #fff;
+}
+
+.btn--outline {
+  background: transparent;
+  color: #4b5efc;
+  border: 1px solid #4b5efc;
+}
+
+.btn--full {
+  width: 100%;
+  margin-top: 12px;
+}
+
+/* ---------- HEADER ---------- */
+.header {
+  background: #fff;
+  border-bottom: 1px solid #e7e9ee;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.header__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 72px;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: 700;
+}
+.logo span { color: #4b5efc; }
+.logo--light { color: #fff; }
+.logo--light span { color: #a5b1ff; }
+
+.nav {
+  display: flex;
+  gap: 28px;
+}
+
+.nav__link {
+  text-decoration: none;
+  color: #1f2430;
+  font-size: 15px;
+}
+.nav__link:hover { color: #4b5efc; }
